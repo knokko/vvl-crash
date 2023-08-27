@@ -1,0 +1,93 @@
+           PID: 12822 (a.out)
+           UID: 1000 (knokko)
+           GID: 1000 (knokko)
+        Signal: 11 (SEGV)
+     Timestamp: Sun 2023-08-27 09:59:02 CEST (11s ago)
+  Command Line: ./a.out
+    Executable: /home/knokko/programming/c/a.out
+ Control Group: /user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-e4d24af9-30ff-4cc7-83bb-95426ea18501.scope
+          Unit: user@1000.service
+     User Unit: vte-spawn-e4d24af9-30ff-4cc7-83bb-95426ea18501.scope
+         Slice: user-1000.slice
+     Owner UID: 1000 (knokko)
+       Boot ID: edcff2e8484847f99b2ad93780bbe9c1
+    Machine ID: 0db26a270a624b6796988bc256411bed
+      Hostname: endor
+       Storage: /var/lib/systemd/coredump/core.a\x2eout.1000.edcff2e8484847f99b2ad93780bbe9c1.12822.1693123142000000.zst (present)
+  Size on Disk: 3.1M
+       Message: Process 12822 (a.out) of user 1000 dumped core.
+                
+                Stack trace of thread 12822:
+                #0  0x00007fa82d4378c4 n/a (libVkLayer_khronos_validation.so + 0x14378c4)
+                #1  0x00007fa82d43ad53 n/a (libVkLayer_khronos_validation.so + 0x143ad53)
+                #2  0x00007fa82d44107d n/a (libVkLayer_khronos_validation.so + 0x144107d)
+                #3  0x00007fa82d44aa6a n/a (libVkLayer_khronos_validation.so + 0x144aa6a)
+                #4  0x00007fa82d441c37 n/a (libVkLayer_khronos_validation.so + 0x1441c37)
+                #5  0x00007fa82d442170 n/a (libVkLayer_khronos_validation.so + 0x1442170)
+                #6  0x00007fa82d443c36 n/a (libVkLayer_khronos_validation.so + 0x1443c36)
+                #7  0x00007fa82d46a266 n/a (libVkLayer_khronos_validation.so + 0x146a266)
+                #8  0x00007fa82cf9c36d n/a (libVkLayer_khronos_validation.so + 0xf9c36d)
+                #9  0x00007fa82d029622 n/a (libVkLayer_khronos_validation.so + 0x1029622)
+                #10 0x0000556b79ffb5a9 n/a (/home/knokko/programming/c/a.out + 0x15a9)
+                #11 0x00007fa83aa23a90 __libc_start_call_main (libc.so.6 + 0x23a90)
+                #12 0x00007fa83aa23b49 __libc_start_main_impl (libc.so.6 + 0x23b49)
+                #13 0x0000556b79ffb1e5 n/a (/home/knokko/programming/c/a.out + 0x11e5)
+                ELF object binary architecture: AMD x86-64
+
+GNU gdb (Ubuntu 13.1-2ubuntu2) 13.1
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from /home/knokko/programming/c/a.out...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) 
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in /home/knokko/programming/c/a.out)
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file /memfd:state table (deleted) during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+
+warning: Can't open file anon_inode:i915.gem which was expanded to anon_inode:i915.gem during file-backed mapping note processing
+[New LWP 12822]
+[New LWP 12825]
+[New LWP 12823]
+[New LWP 12824]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `./a.out'.
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00007fa82d4378c4 in ?? () from /lib/x86_64-linux-gnu/libVkLayer_khronos_validation.so
+[Current thread is 1 (Thread 0x7fa83ac53740 (LWP 12822))]
+(gdb) exit
+
